@@ -1,0 +1,39 @@
+[versions]
+agp = "8.3.2"
+kotlin = "1.9.20"
+compose = "1.5.4"
+compose-compiler = "1.5.4"
+compose-material3 = "1.1.2"
+androidx-activityCompose = "1.8.0"
+dateTimeVersion = "0.4.1"
+sqlDelight = "2.0.1"
+dagger-hilt = "2.48"
+androidx-hilt = "1.0.0"
+androidx-navigation-compose = "2.6.0"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "dateTimeVersion" }
+native-driver = { module = "app.cash.sqldelight:native-driver", version.ref = "sqlDelight" }
+runtime = { module = "app.cash.sqldelight:runtime", version.ref = "sqlDelight" }
+android-driver = { module = "app.cash.sqldelight:android-driver", version.ref = "sqlDelight" }
+dagger-hilt = { module = "com.google.dagger:hilt-android", version.ref = "dagger-hilt" }
+dagger-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "dagger-hilt" }
+androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "androidx-hilt" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "androidx-hilt" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx-navigation-compose"}
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+sqldelight = { id = "app.cash.sqldelight", version.ref = "sqlDelight" }
+daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "dagger-hilt" }
